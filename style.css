@@ -4,8 +4,106 @@ Theme URI: http://cortex.mikado-themes.com
 Description: A child theme customized by Alex Rds.
 Author: Mikado Themes
 Author URI: http://www.alexrds.com
-Version: 1.0.0 - 22 12 2017
+Version: 1.0.1 - 05 01 2018
 Text Domain: cortex
 Template: Cortex
 */
+
+/* TEMPLATE CUSTOM */
+
+.page-id-491.mkdf-light-header .mkdf-page-header>div:not(.mkdf-sticky-header) .mkdf-main-menu>ul>li>a span.mkdf-item-inner .mkdf-item-text:before, 
+.page-id-491.mkdf-light-header.mkdf-header-style-on-scroll .mkdf-page-header .mkdf-main-menu>ul>li>a span.mkdf-item-inner .mkdf-item-text:before {
+    background-color: #42b0c2;
+}
+
+.mkdf-btn.mkdf-hovered .mkdf-btn-icon-holder {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+}
+
+.mkdf-rev-slider-loaded .mkdf-smooth-transition-loader,
+body:not(.page-template-landing-page):not(.page-id-552) .mkdf-smooth-transition-loader {
+    display: none !important;
+    opacity: 0 !important;
+}
+
+body.page-template-landing-page .mkdf-smooth-transition-loader {
+    background-color: transparent !important;
+}
+
+/*CUSTOM FONT*/
+
+@font-face {
+    font-family: 'Mrs Onion Dotted';
+    src: url('fonts/MrsOnion-Dotted.woff2') format('woff2'),
+        url('fonts/MrsOnion-Dotted.woff') format('woff'),
+        url('fonts/MrsOnion-Dotted.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mrs Onion 3D Striped Dotted';
+    src: url('fonts/MrsOnion-3DStripedDotted.woff2') format('woff2'),
+        url('fonts/MrsOnion-3DStripedDotted.woff') format('woff'),
+        url('fonts/MrsOnion-3DStripedDotted.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mrs Onion';
+    src: url('fonts/MrsOnion-Regular.woff2') format('woff2'),
+        url('fonts/MrsOnion-Regular.woff') format('woff'),
+        url('fonts/MrsOnion-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mrs Onion 3D Dotted';
+    src: url('fonts/MrsOnion-3DDotted.woff2') format('woff2'),
+        url('wp-content/themes/angelcinema-child/fonts/MrsOnion-3DDotted.woff') format('woff'),
+        url('wp-content/themes/angelcinema-child/fonts/MrsOnion-3DDotted.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ASIGNAR FONT */
+h1,
+h2 {
+    font-family: 'Mrs Onion 3D Dotted', Helvetica, Arial sans-serif !important;
+    font-weight: normal !important;
+}
+
+h3,
+h4,
+h5
+{
+    font-family: 'Mrs Onion 3D Striped Dotted', Helvetica, Arial sans-serif !important;
+    font-weight: normal !important;
+}
+
+.mkdf-btn-text,
+.mkdf-pcta-text
+{
+    font-family: 'Mrs Onion', Helvetica, Arial sans-serif !important;
+    font-weight: normal !important;
+}
+
+
+
+.mkdf-section-title {
+     font-family: 'Mrs Onion 3D Striped Dotted', Helvetica, Arial sans-serif !important;
+    font-weight: normal !important;
+    color: #86d7e5 !important;
+    
+}
+
+
+/*Previous CSS*/
+
+.mkdf-blog-list-holder.mkdf-boxes .mkdf-blog-list-item-table-cell .mkdf-section-title {
+    color: #86d7e5;
+}
 
