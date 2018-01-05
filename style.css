@@ -103,7 +103,10 @@ h5
 
 /*Previous CSS*/
 
-.mkdf-blog-list-holder.mkdf-boxes .mkdf-blog-list-item-table-cell .mkdf-section-title {
+.mkdf-blog-list-holder.mkdf-boxes .mkdf-blog-list-item-table-cell .mkdf-section-title,
+.post-info-date,
+.mkdf-post-info-category,
+.mkdf-item-info-section {
     color: #86d7e5;
 }
 
