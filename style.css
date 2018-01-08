@@ -91,6 +91,11 @@ h5
     font-weight: normal !important;
 }
 
+. mkdf-post-info-category,
+.mkdf-post-info-author
+{
+    display: none;
+}
 
 
 .mkdf-section-title {
@@ -107,6 +112,6 @@ h5
 .post-info-date,
 .mkdf-post-info-category,
 .mkdf-item-info-section {
-    color: #86d7e5;
+    color: #86d7e5 !important;
 }
 
