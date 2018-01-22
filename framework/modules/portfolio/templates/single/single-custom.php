@@ -24,9 +24,9 @@
         <div class="mkdf-column-inner">
             <div class="mkdf-portfolio-info-holder">
                
-                <h4 class="mkdf-portfolio-title"><?php the_title(); ?></h4>
+                <h4 class="mkdf-portfolio-title"><?php the_field('version'); ?></h4>
                 
-                <p class="project-name"><?php the_field('version'); ?></p>
+                <p class="project-name"><?php the_field('brand'); ?></p>
                 
                 
                 <?php if( get_field('director') ): ?>
