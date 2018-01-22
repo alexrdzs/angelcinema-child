@@ -85,29 +85,14 @@
 
 
 <!--RELATED PROJECTS-->
-
-
 <?php 
 $back_to_link = get_post_meta( get_the_ID(), 'portfolio_single_back_to_link', true );
 ?>
-<div class="mkdf-portfolio-list-holder-outer mkdf-ptf-gallery mkdf-portfolio-slider-holder mkdf-portfolio-related-holder mkdf-ptf-hover-zoom-out-simple mkdf-ptf-nav-hidden" data-items='3'>
-    
-    <h5><?php esc_html_e('More Projects', 'cortex'); ?></h5>
-    <hr>
-	<div class="mkdf-related-nav-holder">
-		<span class="mkdf-related-prev"><span class="lnr lnr-chevron-left"></span></span>
-		<?php if ( $back_to_link !== '' ) : ?>
-			<div class="mkdf-portfolio-back-btn">
-				<a href="<?php echo esc_url( get_permalink( $back_to_link ) ); ?>">
-					<span class="icon_grid-2x2"></span>
-				</a>
-			</div>
-		<?php endif; ?>
-		<span class="mkdf-related-next"><span class="lnr lnr-chevron-right"></span></span>
-	</div>
+<div class="mkdf-portfolio-list-holder-outer mkdf-ptf-gallery mkdf-portfolio-slider-holder mkdf-portfolio-related-holder mkdf-ptf-hover-zoom-out-simple" data-items='5' data-centered='yes'>
+    <h5 class="mkdf-ptf-related-title"><?php esc_html_e('Related Projects', 'cortex'); ?></h5>
     <div class="mkdf-portfolio-list-holder clearfix">
         <?php
-        $query = cortex_mikado_get_related_post_type(get_the_ID(), array('posts_per_page' => '8'));
+        $query = cortex_mikado_get_related_post_type(get_the_ID(), array('posts_per_page' => '6'));
         if (is_object($query)) {
             if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post(); ?>
                 <?php if (has_post_thumbnail()) {
@@ -161,6 +146,3 @@ $back_to_link = get_post_meta( get_the_ID(), 'portfolio_single_back_to_link', tr
     </div>
 </div>
 
-
-
-</div>

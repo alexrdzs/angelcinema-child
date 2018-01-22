@@ -131,7 +131,6 @@ h5
     font-family: 'Mrs Onion', Helvetica, Arial sans-serif !important;
 
     
-
 }
 
 .moreinfo-name {
@@ -143,5 +142,13 @@ h5
 .mkdf-portfolio-content p {
     margin: 25px 0px; 
 font-size: 12px;
+}
+
+.mkdf-item-title {
+  font-size: 1.5vmax !important;
+}
+
+.mkdf-item-image-holder img {
+    width: 100% !important;
 }
 
