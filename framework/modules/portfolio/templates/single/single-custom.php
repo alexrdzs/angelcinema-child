@@ -140,7 +140,7 @@ $back_to_link = get_post_meta( get_the_ID(), 'portfolio_single_back_to_link', tr
             endif;
             wp_reset_postdata();
         } else { ?>
-            <p><?php esc_html_e('No related portfolios were found.', 'cortex'); ?></p>
+            <p><?php esc_html_e('No related projects were found.', 'cortex'); ?></p>
         <?php }
         ?>
     </div>
