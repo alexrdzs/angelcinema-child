@@ -152,3 +152,12 @@ font-size: 12px;
     width: 100% !important;
 }
 
+@media only screen and (max-width: 1024px)
+.mkdf-content {
+    margin-top: -100px !important;
+}
+
+.mkdf-content {
+    margin-top: -50px;
+}
+
