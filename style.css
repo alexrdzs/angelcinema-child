@@ -156,6 +156,6 @@ font-size: 12px;
 }
 
 .mkdf-content {
-    margin-top: -50px;
+    margin-top: -50px !important;
 }
 
