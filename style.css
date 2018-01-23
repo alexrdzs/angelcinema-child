@@ -168,3 +168,10 @@ h5
     border-top: 1px solid #ababab;
     padding-top: 25px;
 }
+
+.mkdf-team .mkdf-team-image {
+    border-radius: 50%;
+    line-height: 1.42857143;
+    background-color: #fff;
+    text-align: center;
+}
