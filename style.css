@@ -119,18 +119,16 @@ h5
 /* PORTOFLIO CUSTOM */
 
 .mkdf-portfolio-title {
-    margin: 15px 5px 0px -5px !important;
-   letter-spacing: -1px;
-   color: #000 !important;
-
+    margin: 25px 5px 15px -5px !important;
+    color: #000 !important;
+    font-size: calc(.5em + 5vmin);
+    line-height: calc(1em + -0.5vmin);
 }
 
 .project-name{
-    color:#ababab;
-    margin: 0px 5px 15px 0px;
+    color:#86d7e5;
+    margin: -5px 5px 15px 0px;
     font-family: 'Mrs Onion', Helvetica, Arial sans-serif !important;
-
-    
 }
 
 .moreinfo-name {

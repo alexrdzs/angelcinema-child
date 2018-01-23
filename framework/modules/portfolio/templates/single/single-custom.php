@@ -71,7 +71,7 @@
 
         ?>
         <div class="mkdf-portfolio-info-item mkdf-portfolio-categories">
-            <span class="mkdf-portfolio-info-item-title"><?php echo esc_html(implode(', ', $categy_names)); ?></span>
+            <span class="category-name"><?php echo esc_html(implode(', ', $categy_names)); ?></span>
 
            
         </div>
