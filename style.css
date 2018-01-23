@@ -4,7 +4,7 @@ Theme URI: http://cortex.mikado-themes.com
 Description: A child theme of Cortex Theme
 Author: Mikado Themes - Customized by Alex Rds
 Author URI: http://themeforest.net/user/mikado-themes
-Version: 1.5.0 - 21 01 18
+Version: 1.5.1 - 23 01 18
 Text Domain: cortex
 Template: cortex
 */
@@ -113,7 +113,7 @@ h5
 .mkdf-post-info-category,
 .mkdf-item-info-section,
 .mkdf-portfolio-info-item-title {
-    color: #2dc9e5 !important;
+    color: #86d7e5 !important;
 }
 
 /* PORTOFLIO CUSTOM */
@@ -126,20 +126,26 @@ h5
 }
 
 .project-name{
-    color:#86d7e5;
+    color:#2dc9e5;
     margin: -5px 5px 15px 0px;
     font-family: 'Mrs Onion', Helvetica, Arial sans-serif !important;
 }
 
 .moreinfo-name {
     font-family: 'Mrs Onion', Helvetica, Arial sans-serif !important;
+    color: #262626 !important;
+    font-weight: 300;
+}
+
+.moreinfo-category {
     letter-spacing: 0px;
-    color: #000 !important;
+    color: #e3e3e3 !important;
+    
 }
 
 .mkdf-portfolio-content p {
     margin: 25px 0px; 
-font-size: 12px;
+    font-size: 12px;
 }
 
 .mkdf-item-title {
@@ -150,12 +156,15 @@ font-size: 12px;
     width: 100% !important;
 }
 
-@media only screen and (max-width: 1024px)
-.mkdf-content {
-    margin-top: -100px !important;
+.mkdf-portfolio-single-holder{
+        margin-top: 1vh !important;
 }
 
-.mkdf-content {
-    margin-top: -50px !important;
+.mkdf-portfolio-media {
+        margin: 0 0 25px 0 !important;
 }
 
+.mkdf-ptf-related-title {
+    border-top: 1px solid #ababab;
+    padding-top: 25px;
+}

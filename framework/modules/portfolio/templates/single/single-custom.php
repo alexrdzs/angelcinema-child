@@ -14,6 +14,7 @@
                         </div>
                     <?php endforeach; ?>
                 </div>
+            <br>
             <?php endif; ?>
             
            
@@ -24,9 +25,29 @@
         <div class="mkdf-column-inner">
             <div class="mkdf-portfolio-info-holder">
                
-                <h4 class="mkdf-portfolio-title"><?php the_field('version'); ?></h4>
+                <h4 class="mkdf-portfolio-title"><?php the_field('version'); ?></h4> 
                 
-                <p class="project-name"><?php the_field('brand'); ?></p>
+                <p class="project-name"><?php the_field('brand'); ?>
+                
+                    <?php
+    $categories   = wp_get_post_terms(get_the_ID(), 'portfolio-category');
+    $categy_names = array();
+
+    if(is_array($categories) && count($categories)) :
+        foreach($categories as $category) {
+            $categy_names[] = $category->name;
+        }
+
+        ?>
+        
+            <span class="moreinfo-category"><?php echo esc_html(implode(', ', $categy_names)); ?></span>
+
+           
+       
+    <?php endif; ?>
+                    
+                </p>
+                
                 
                 
                 <?php if( get_field('director') ): ?>
@@ -60,24 +81,6 @@
             <?php the_content(); ?>
             </div>
             
-            <?php
-    $categories   = wp_get_post_terms(get_the_ID(), 'portfolio-category');
-    $categy_names = array();
-
-    if(is_array($categories) && count($categories)) :
-        foreach($categories as $category) {
-            $categy_names[] = $category->name;
-        }
-
-        ?>
-        <div class="mkdf-portfolio-info-item mkdf-portfolio-categories">
-            <span class="category-name"><?php echo esc_html(implode(', ', $categy_names)); ?></span>
-
-           
-        </div>
-    <?php endif; ?>
-            
-            
             </div>
         
         </div>
@@ -89,7 +92,7 @@
 $back_to_link = get_post_meta( get_the_ID(), 'portfolio_single_back_to_link', true );
 ?>
 <div class="mkdf-portfolio-list-holder-outer mkdf-ptf-gallery mkdf-portfolio-slider-holder mkdf-portfolio-related-holder mkdf-ptf-hover-zoom-out-simple" data-items='5' data-centered='yes'>
-    <h5 class="mkdf-ptf-related-title"><?php esc_html_e('Related Projects', 'cortex'); ?></h5>
+    <h3 class="mkdf-ptf-related-title"><?php esc_html_e('Related Projects:', 'cortex'); ?></h3>
     <div class="mkdf-portfolio-list-holder clearfix">
         <?php
         $query = cortex_mikado_get_related_post_type(get_the_ID(), array('posts_per_page' => '6'));
