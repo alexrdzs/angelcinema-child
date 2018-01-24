@@ -4,7 +4,7 @@ Theme URI: http://cortex.mikado-themes.com
 Description: A child theme of Cortex Theme
 Author: Mikado Themes - Customized by Alex Rds
 Author URI: http://themeforest.net/user/mikado-themes
-Version: 1.5.1 - 23 01 18
+Version: 1.5.3 - 24 01 18
 Text Domain: cortex
 Template: cortex
 */
@@ -148,9 +148,11 @@ h5
     font-size: 12px;
 }
 
+/*
 .mkdf-item-title {
-  font-size: 1.5vmax !important;
+  font-size: calc(1.5em + 5vmin); !important;
 }
+*/
 
 .mkdf-item-image-holder img {
     width: 100% !important;
