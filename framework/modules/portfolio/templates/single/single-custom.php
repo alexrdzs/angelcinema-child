@@ -58,6 +58,15 @@
                 </div>
                 <?php endif; ?>
                 
+                <?php if( get_field('production') ): ?>
+
+                <div class="mkdf-portfolio-info-item mkdf-portfolio-custom-field">
+                <span class="mkdf-portfolio-info-item-title">Production</span>
+                <p id="agency-name" class="moreinfo-name"><?php the_field('production'); ?></p>
+                </div>
+                
+                <?php endif; ?>
+                
                 <?php if( get_field('client') ): ?>
 
                 <div class="mkdf-portfolio-info-item mkdf-portfolio-custom-field">
